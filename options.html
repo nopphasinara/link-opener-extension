@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quick Selected Link Opener - Settings</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 30px;
+      max-width: 450px;
+      margin: 0 auto;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    .card {
+      background: #fff;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #111;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 12px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #1557b0;
+    }
+    .status {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #137333;
+      text-align: center;
+      height: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Extension Settings</h2>
+
+    <div class="form-group">
+      <label for="openMode">Opening Mode:</label>
+      <select id="openMode">
+        <option value="newTab">Open in New Tab</option>
+        <option value="currentTab">Open in Current Tab</option>
+        <option value="newWindow">Open in New Window</option>
+      </select>
+    </div>
+
+    <button id="saveBtn">Save Settings</button>
+    <div id="status" class="status"></div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

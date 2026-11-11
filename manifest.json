@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Selected Link Opener",
+  "version": "4.0",
+  "description": "Click the extension icon to instantly open selected text as a URL or file link with modern tooltip notifications.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  }
+}
